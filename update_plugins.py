@@ -39,6 +39,7 @@ syntastic https://github.com/scrooloose/syntastic
 vim-repeat https://github.com/tpope/vim-repeat
 vim-commentary https://github.com/tpope/vim-commentary
 vim-go https://github.com/fatih/vim-go
+supertab https://github.com/ervandew/supertab
 """.strip()
 
 GITHUB_ZIP = '%s/archive/master.zip'
