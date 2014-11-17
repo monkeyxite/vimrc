@@ -43,6 +43,7 @@ supertab https://github.com/ervandew/supertab
 python-mode https://github.com/klen/python-mode
 jedi-vim https://github.com/davidhalter/jedi-vim
 xmledit https://github.com/sukima/xmledit.git ~/.vim/bundle/xmledit
+tagbar https://github.com/majutsushi/tagbar.git
 """.strip()
 
 GITHUB_ZIP = '%s/archive/master.zip'
