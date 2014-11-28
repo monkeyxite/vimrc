@@ -4,14 +4,18 @@
 au BufNewFile,BufRead *.ini,*/.hgrc,*/.hg/hgrc,*.seq setf dosini
 
 
-set guifont=Consolas:h10:b:cDEFAULT
+if has("win32")
+    set guifont=Consolas:h10:b:cDEFAULT
+elseif has("linux") || has("unix")
+    set guifont=DejaVu\ Sans\ Mono\ 10
+endif
 "set guifont=Bitstream_Vera_Sans_Mono:h10:cANSI
 
 
 """"""""""""""""""""""""""""""
 " Tag list (ctags)
 """"""""""""""""""""""""""""""
-if has("windows")
+if has("win32")
   let Tlist_Ctags_Cmd = 'ctags'
 elseif has("linux") || has("unix")
   "let Tlist_Ctags_Cmd = '/usr/bin/ctags'
