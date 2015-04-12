@@ -93,3 +93,6 @@ let g:pymode_folding = 0
 
 " TagBar setting
 nmap <F8> :TagbarToggle<CR>
+
+" pass sudo into shell
+nmap <leader>sudo :w !sudo tee %
